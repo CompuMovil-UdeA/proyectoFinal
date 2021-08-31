@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet, Vie, Button, View } from 'react-native';
+import { StyleSheet, Button, View } from 'react-native';
 
 const Home = ({navigation}) => {
     
@@ -12,13 +12,12 @@ const Home = ({navigation}) => {
     }
 
     return(
-        <View style= {styles.contenedor}>            
+        <View>            
             <Button 
                 title= "Metas" 
                 onPress = {
                     () => irAmetas()                    
-                }   
-                
+                }                  
             />
 
             <Button 
@@ -31,14 +30,6 @@ const Home = ({navigation}) => {
         </View>
         
     );
-}
-
-const styles = StyleSheet.create({
-    contenedor: {
-        flex: 1,
-        margin: '5%',   
-    }
-  });
-  
+}  
 
 export default Home;

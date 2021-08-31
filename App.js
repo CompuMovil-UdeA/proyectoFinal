@@ -9,9 +9,10 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Home from '../proyectoFinal/components/Home';
+import Home from './components/Home';
 import Metas from './components/Metas';
 import Notas from './components/Notas';
+
 
 const Stack = createStackNavigator();
 
@@ -25,22 +26,17 @@ const App = () => {
         />
          <Stack.Screen
             name= "Metas"
-            component= {Metas}
+            component={Metas}
          />
          <Stack.Screen
             name= "Notas"
             component= {Notas}
          />
+         
       </Stack.Navigator>
 
     </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  encabezado: {
-    textAlign: 'center'
-  }
-});
 
 export default App;
