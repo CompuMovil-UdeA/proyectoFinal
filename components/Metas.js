@@ -50,14 +50,14 @@ const Metas = () => {
             <Text style={styles.titulo}> Crear Meta </Text>
 
             <View style={styles.formulario}>
-                <Text style={styles.subtitulos}>Nombre:</Text>
+                <Text style={styles.textoCrear}>Nombre</Text>
                 <TextInput style={styles.input} />
 
-                <Text style={styles.subtitulos}>Descripción:</Text>
+                <Text style={styles.textoCrear}>Descripción</Text>
                 <TextInput style={styles.textArea} />
 
-                <View>
-                    <Text>Fecha de inicio:</Text>
+                <View >
+                    <Text style={styles.textoCrear}>Fecha inicial </Text>
                     <Text>{fechaInicio}</Text>
                     <Button title="Seleccionar fecha" onPress={showDatePicker} />
                     <DateTimePickerModal
@@ -68,8 +68,8 @@ const Metas = () => {
                     />
                 </View>
 
-                <View>
-                    <Text>Fecha final:</Text>
+                <View >
+                    <Text style={styles.textoCrear}>Fecha final</Text>
                     <Text>{fechaFinal}</Text>
                     <Button title="Seleccionar fecha" onPress={showDatePickerFinal} />
                     <DateTimePickerModal
@@ -104,17 +104,13 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
 
-    subtitulos: {
-        marginTop: 5,
-        fontSize: 14,
-    },
-
     input: {
         height: 40,
         marginVertical: 5,
         borderWidth: 1,
         borderStyle: 'solid',
         borderColor: '#000',
+        borderRadius: 100
     },
 
     textArea: {
@@ -123,20 +119,23 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderStyle: 'solid',
         borderColor: '#000',
+        borderRadius: 10
     },
 
     btnCrear: {
-        backgroundColor: '#4483FA',
+        backgroundColor: '#E04281',
         padding: 10,
         marginTop: '40%',
-        marginBottom: '20%'
+        marginBottom: '20%',
+        borderRadius: 100
     },
 
     textoCrear: {
-        color: '#fff',
+        color: '#000',
         textTransform: 'uppercase',
         textAlign: 'center',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+
     }
 });
 

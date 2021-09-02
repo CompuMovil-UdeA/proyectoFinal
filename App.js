@@ -1,9 +1,5 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {  
-  StyleSheet,
-  Text,
-} from 'react-native';
 
 //react navigation
 import { NavigationContainer } from '@react-navigation/native';
@@ -26,7 +22,7 @@ const App = () => {
         />
          <Stack.Screen
             name= "Metas"
-            component={Metas}
+            component={Metas}s
          />
          <Stack.Screen
             name= "Notas"
